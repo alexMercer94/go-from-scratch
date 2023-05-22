@@ -10,9 +10,18 @@ func main() {
 	fmt.Println(state)
 	fmt.Println(text) */
 
-	if os := runtime.GOOS; os == "Linux." || os == "OS X." {
-		fmt.Println("No es mi sistema")
+	if os := runtime.GOOS; os == "linux" || os == "OS X" {
+		fmt.Println("No es mi sistema, es:", os)
 	} else {
-		fmt.Println("Esto es", os)
+		fmt.Println("Esto es Mac", os)
+	}
+
+	switch os := runtime.GOOS; os {
+	case "Linux":
+		fmt.Println("Esto es Linux")
+	case "darwin":
+		fmt.Println("Esto es MacOS")
+	default:
+		fmt.Printf("%s \n", os)
 	}
 }
