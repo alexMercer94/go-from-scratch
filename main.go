@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"runtime"
+
+	"github.com/go-from-scratch/ejercicios"
 )
 
 func main() {
@@ -10,7 +11,8 @@ func main() {
 	fmt.Println(state)
 	fmt.Println(text) */
 
-	if os := runtime.GOOS; os == "linux" || os == "OS X" {
+	// Condicionales
+	/* if os := runtime.GOOS; os == "linux" || os == "OS X" {
 		fmt.Println("No es mi sistema, es:", os)
 	} else {
 		fmt.Println("Esto es Mac", os)
@@ -23,5 +25,11 @@ func main() {
 		fmt.Println("Esto es MacOS")
 	default:
 		fmt.Printf("%s \n", os)
-	}
+	} */
+
+	// Ejercicio 01
+	number, message := ejercicios.ReturnValues("55")
+	fmt.Println("Number: ", number)
+	fmt.Println("Message: ", message)
+
 }
