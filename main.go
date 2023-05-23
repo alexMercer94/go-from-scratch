@@ -41,5 +41,5 @@ func main() {
 	// files.SumTableInFile()
 	// files.ReadFile()
 
-	funciones.CallClosure()
+	funciones.Exponencia(2)
 }
