@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/go-from-scratch/ejercicios"
 )
 
@@ -28,8 +26,14 @@ func main() {
 	} */
 
 	// Ejercicio 01
-	number, message := ejercicios.ReturnValues("55")
+	/* number, message := ejercicios.ReturnValues("55")
 	fmt.Println("Number: ", number)
-	fmt.Println("Message: ", message)
+	fmt.Println("Message: ", message) */
 
+	// teclado.InputNumbers()
+
+	// iteraciones.Iterate()
+
+	// Ejercicio 02
+	ejercicios.CreateTable()
 }
