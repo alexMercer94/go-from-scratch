@@ -10,8 +10,9 @@ import (
 var num1 int
 var err error
 
-func CreateTable() {
+func CreateTable() string {
 	scanner := bufio.NewScanner(os.Stdin)
+	var table string
 
 	for {
 		fmt.Println("Ingrese el numero: ")
@@ -27,6 +28,8 @@ func CreateTable() {
 
 	fmt.Printf("\n")
 	for i := 1; i <= 10; i++ {
-		fmt.Printf("%d x %d = %d \n", num1, i, num1*i)
+		table += fmt.Sprintf("%d x %d = %d \n", num1, i, num1*i)
 	}
+
+	return table
 }

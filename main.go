@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/go-from-scratch/ejercicios"
+	"github.com/go-from-scratch/funciones"
 )
 
 func main() {
@@ -35,5 +35,11 @@ func main() {
 	// iteraciones.Iterate()
 
 	// Ejercicio 02
-	ejercicios.CreateTable()
+	// fmt.Println(ejercicios.CreateTable())
+
+	// files.SaveTable()
+	// files.SumTableInFile()
+	// files.ReadFile()
+
+	funciones.CallClosure()
 }
