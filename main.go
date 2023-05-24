@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/go-from-scratch/mapas"
+	"github.com/go-from-scratch/users"
 )
 
 func main() {
@@ -47,5 +47,8 @@ func main() {
 	// arrays_slices.Capacidad()
 
 	// Mapas
-	mapas.ShowMapas()
+	// mapas.ShowMapas()
+
+	// Objectos POO
+	users.AddUser()
 }
