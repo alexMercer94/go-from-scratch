@@ -1,7 +1,9 @@
 package main
 
 import (
-	"github.com/go-from-scratch/defpan"
+	"fmt"
+
+	"github.com/go-from-scratch/goroutines"
 )
 
 func main() {
@@ -59,5 +61,14 @@ func main() {
 	e.HumansRespirando(Maria) */
 
 	// Defer & Panic
-	defpan.EjempPanic()
+	// defpan.EjempPanic()
+
+	// Go Routines - Asyncs
+	canal1 := make(chan bool)
+	go goroutines.MyNameSlowly("Alex", canal1)
+	defer func() {
+		<-canal1
+	}()
+	fmt.Println("I'm here")
+
 }
