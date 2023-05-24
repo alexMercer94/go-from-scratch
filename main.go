@@ -1,8 +1,7 @@
 package main
 
 import (
-	e "github.com/go-from-scratch/ejer_interfaces"
-	"github.com/go-from-scratch/models"
+	"github.com/go-from-scratch/defpan"
 )
 
 func main() {
@@ -54,8 +53,11 @@ func main() {
 	// users.AddUser()
 
 	// Interfaces
-	Pedro := new(models.Hombre)
+	/* Pedro := new(models.Hombre)
 	e.HumansRespirando(Pedro)
 	Maria := new(models.Mujer)
-	e.HumansRespirando(Maria)
+	e.HumansRespirando(Maria) */
+
+	// Defer & Panic
+	defpan.EjempPanic()
 }
