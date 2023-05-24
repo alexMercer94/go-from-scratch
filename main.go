@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/go-from-scratch/arrays_slices"
+	"github.com/go-from-scratch/mapas"
 )
 
 func main() {
@@ -44,5 +44,8 @@ func main() {
 	// funciones.Exponencia(2)
 
 	// Arrays
-	arrays_slices.Capacidad()
+	// arrays_slices.Capacidad()
+
+	// Mapas
+	mapas.ShowMapas()
 }
