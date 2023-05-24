@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/go-from-scratch/goroutines"
+	"github.com/go-from-scratch/webserver"
 )
 
 func main() {
@@ -64,11 +62,14 @@ func main() {
 	// defpan.EjempPanic()
 
 	// Go Routines - Asyncs
-	canal1 := make(chan bool)
+	/* canal1 := make(chan bool)
 	go goroutines.MyNameSlowly("Alex", canal1)
 	defer func() {
 		<-canal1
 	}()
-	fmt.Println("I'm here")
+	fmt.Println("I'm here") */
+
+	// Web Server
+	webserver.WebServer()
 
 }
