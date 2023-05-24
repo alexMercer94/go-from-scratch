@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/go-from-scratch/users"
+	e "github.com/go-from-scratch/ejer_interfaces"
+	"github.com/go-from-scratch/models"
 )
 
 func main() {
@@ -50,5 +51,11 @@ func main() {
 	// mapas.ShowMapas()
 
 	// Objectos POO
-	users.AddUser()
+	// users.AddUser()
+
+	// Interfaces
+	Pedro := new(models.Hombre)
+	e.HumansRespirando(Pedro)
+	Maria := new(models.Mujer)
+	e.HumansRespirando(Maria)
 }
