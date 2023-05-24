@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/go-from-scratch/funciones"
+	"github.com/go-from-scratch/arrays_slices"
 )
 
 func main() {
@@ -41,5 +41,8 @@ func main() {
 	// files.SumTableInFile()
 	// files.ReadFile()
 
-	funciones.Exponencia(2)
+	// funciones.Exponencia(2)
+
+	// Arrays
+	arrays_slices.Capacidad()
 }
