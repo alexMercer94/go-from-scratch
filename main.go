@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/go-from-scratch/webserver"
+	"github.com/go-from-scratch/middleware"
 )
 
 func main() {
@@ -70,6 +70,8 @@ func main() {
 	fmt.Println("I'm here") */
 
 	// Web Server
-	webserver.WebServer()
+	// webserver.WebServer()
 
+	// Middleware
+	middleware.MyMiddleware()
 }
